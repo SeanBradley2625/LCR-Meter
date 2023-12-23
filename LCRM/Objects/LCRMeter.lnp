@@ -1,0 +1,10 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\pb_lcd_drivers.o"
+".\objects\main.o"
+".\objects\basefunctions.o"
+".\objects\startup_stm32f407xx.o"
+".\objects\system_stm32f4xx.o"
+--strict --scatter ".\Objects\LCRMeter.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\LCRMeter.map" -o .\Objects\LCRMeter.axf

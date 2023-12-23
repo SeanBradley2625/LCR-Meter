@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Support The Flex license: MDK Professional 5.35 (Flex) (mdk_pro) Operation stops: 20 Jan 2025
+ 
+Tool Versions:
+Toolchain:       MDK Professional 5.35 (Flex)  Version: 5.35.0.2
+Toolchain Path:  c:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.16
+Assembler:       Armasm.exe V6.16
+Linker/Locator:  ArmLink.exe V6.16
+Library Manager: ArmAr.exe V6.16
+Hex Converter:   FromElf.exe V6.16
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+M:\Year2Project\LCRM\LCRMeter.uvprojx
+Project File Date:  12/14/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.16', folder: 'c:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+main.c(1): warning: In file included from...
+./baseFunctions.h(3): warning: non-portable path to file '"stm32f407xx.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+#include "STM32F407xx.h"
+         ^~~~~~~~~~~~~~~
+         "stm32f407xx.h"
+main.c(3): warning: no previous extern declaration for non-static variable 'capDischargeResistor' [-Wmissing-variable-declarations]
+uint32_t capDischargeResistor=10000;
+         ^
+main.c(3): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+uint32_t capDischargeResistor=10000;
+^
+main.c(5): warning: no previous prototype for function 'findCapacitorValue' [-Wmissing-prototypes]
+void findCapacitorValue(){
+     ^
+main.c(5): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void findCapacitorValue(){
+^
+static 
+main.c(5): warning: this old-style function definition is not preceded by a prototype [-Wstrict-prototypes]
+void findCapacitorValue(){
+                       ^
+4 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=4106 RO-data=442 RW-data=16 ZI-data=1728  
+".\Objects\LCRMeter.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\KEIL_V5\ARM\PACK\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  C:\KEIL_V5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK\Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f407xx.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
